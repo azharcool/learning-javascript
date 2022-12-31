@@ -1,45 +1,53 @@
 // Conditional: if statement
 
 // syntax
-if (condition) {
-  // run some code
-} else {
-  // run some different code.
-}
-
-// var order = "chicken noodles";
-// var reply;
-// if(order){
-//    reply = `your order is ${order}`
+// if(condition){
+//   run some code
 // }else {
-//     reply = "sorry, you don't order"
+//   run different code
+// }
+
+// var order = "";
+// var reply;
+
+// // true true
+// if(order){
+//  reply = `your order is ${order}`
+// }else {
+//   reply = "you don't have any order"
 // }
 
 // console.log(reply);
 
-var isShopClose = true;
-var order = "chicke noodles";
-var response;
-if (isShopClose) {
-  response = "shop will be open at 10AM to 6AM";
-} else if (order) {
-  reply = `your order is ${order}`;
-} else {
-  reply = "sorry, you don't order";
-}
-console.log(reply);
+// console.log(reply);
 
-var yourScore = 89;
+var isShopClose = false;
+var order = "";
+var response;
+
+if (isShopClose) {
+  response = "shop will be open at 10AM to 10PM";
+} else if (order) {
+  response = `your order is ${order}`;
+} else {
+  response = "you don't have any order";
+}
+
+console.log(response);
+
+var myScore = 59;
 var finalGrade;
 
-if (yourScore >= 90) {
+
+// ladder if-else statement
+if (myScore >= 90) {
   finalGrade = "A";
-} else if (yourScore >= 80) {
+} else if (myScore >= 80) {
   finalGrade = "B";
-}else if(yourScore >= 70){
-    finalGrade = "C";
-}else if(yourScore >= 70){
-    finalGrade = "D";
-}else {
-    console.log("failed");
+} else if (myScore >= 70) {
+  finalGrade = "C";
+} else if (myScore >= 60) {
+  finalGrade = "D";
+} else {
+  console.log("failed");
 }

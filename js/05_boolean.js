@@ -5,8 +5,8 @@ console.log(typeof "");
 // convert string to boolean
 
 // string value
-// console.log(Boolean(""));
-// console.log(Boolean("hi"));
+console.log(Boolean("")); // false
+console.log(Boolean("hi")); // true
 
 // number value
 console.log(Boolean(1));
