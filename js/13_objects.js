@@ -64,17 +64,32 @@ Object.entries(myObj).map(([key, value]) => {
   console.log(key, value);
 });
 
+console.clear();
+console.log(window); // global object
+console.log(this); // changeble
+
+console.log(window === this);
+console.clear();
+
 const courses = {
   c_name: "css",
   getCourseName: () => {
-    console.log(this);
+    console.log(this); // belong window object
+
+    return this.c_name;
   },
-  getName: function() {
-    console.log(this);
-  }
+  getName: function () {
+    console.log(this); // current object or calling
+
+    return this.c_name;
+  },
 };
 
-console.log(courses.getCourseName());
+console.log(courses);
+console.log(window === this);
+
+// console.log(courses.getCourseName());
 
 console.log(courses.getName());
 
+// courses.getName();
