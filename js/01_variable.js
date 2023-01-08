@@ -39,3 +39,8 @@
 // var my1Name;
 
 // var 1myName; //error not acceptable
+
+export var myVar = 10;
+
+const myVar2 = 20
+export default myVar2

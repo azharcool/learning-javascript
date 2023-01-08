@@ -4,8 +4,9 @@
     2. JSON is text format that is completely language independent.
     Meaning JSON is used to send & recieve data in many languages not just in javascript...
 
-    1. send -> Json stringify
-    2. recieve ->Json parse
+    What are the use of JSON?
+    1. send data -> JSON.stringify
+    2. recieve data -> JSON.parse
 */
 
 const userData = {
